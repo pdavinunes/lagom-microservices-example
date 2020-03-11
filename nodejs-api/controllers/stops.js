@@ -37,7 +37,7 @@ module.exports = {
             location: {
                 $geoWithin: {
                     $centerSphere: [
-                        [lng, lat], parseInt(radius) / 6378100
+                        [lng, lat], (parseInt(radius) / 1000) / 6371
                     ]
                 }
             }
