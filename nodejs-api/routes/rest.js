@@ -2,6 +2,7 @@ const express = require('express');
 const BusesController = require('../controllers/buses');
 const StopsController = require('../controllers/stops');
 const HomeController = require('../controllers/home');
+const ApiController = require('../controllers/api');
 
 module.exports = app => {
     const APIRouter = new express.Router();
@@ -15,5 +16,6 @@ module.exports = app => {
     APIRouter.get('/buses', BusesController.getAllBuses);
 
     app.use('/api/sp', APIRouter);
+    app.get('/api/sp/sptrans-version', ApiController.getApiVersion);
     app.get('/*', HomeController.getHomePage);
 };
