@@ -1,3 +1,9 @@
+# Link
+
+Segue o link onde me apresento e apresento minhas contribuições 
+
+https://youtu.be/uqTo54THEK0
+
 # Aplicação Demo
 
 Esta aplicação foi criada com o intuito de demonstrar as diferenças e características entre aplicações monolíticas e as que seguem a arquitetura de microsserviços, representadas respectivamente pelas tecnologias [Node.js](https://nodejs.org/en/) e [Lagom](https://www.lagomframework.com/) em sua versão para a linguagem Scala.
