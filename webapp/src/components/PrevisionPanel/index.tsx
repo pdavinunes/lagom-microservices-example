@@ -130,7 +130,7 @@ const PrevisionPanel: FunctionComponent<PrevisionPanelProps> = ({ previsions, st
                 tabPosition={'left'}
                 animated={true}
             >
-                {previsions.map(busLine => (
+                {!!previsions.length ? previsions.map(busLine => (
                     <TabPane
                         key={busLine.lineName}
                         tab={
@@ -172,7 +172,7 @@ const PrevisionPanel: FunctionComponent<PrevisionPanelProps> = ({ previsions, st
                             </div>
                         </div>
                     </TabPane>
-                ))}
+                )) : <h1>Sem busão, irmão</h1>}
             </Tabs>
         </div>
     );
